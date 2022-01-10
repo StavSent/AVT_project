@@ -1,8 +1,8 @@
 /__pycache__
-/data
-/features
+/data/*
+/features/*
 /garbagio
-/models
+/models/*
 /project2.0
-/results
+/results/*
 /splice_gen

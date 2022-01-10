@@ -48,25 +48,13 @@ def main(do_scaling=False):
 
     bonafide_gmm = train_gmm(X=bonafide_X, bonafide=True)
     spoof_gmm = train_gmm(X=spoof_X, bonafide=False)
-
-    # if not features_exist():
-    #     cfe.extract_features()
-    # full_data = pd.read_pickle(data_file)
-    # bonafide_X = full_data.loc[full_data['label'] == 1, feature_names]
-    # spoof_X = full_data.loc[full_data['label'] == 0, feature_names]
-    # if do_scaling:
-    #     sc = scaler()
-    #     bonafide_X = sc.fit(bonafide_X).transform(bonafide_X)
-    #     spoof_X = sc.fit(spoof_X).transform(spoof_X)
-    # print("Full Data Loaded ", time_from(start))
-
     print('Init Done')
 
     bonafide_gmm = train_gmm(X=bonafide_X, bonafide=True, gmm=bonafide_gmm)
-    spoof_gmm = train_gmm(X=spoof_X, bonafide=False, gmm=spoof_gmm)
+    print('Bonafide GMM succesfully trained')
 
-    # score(bonafide=bonafide_gmm, spoof=spoof_gmm, data=full_data)
-    # print("Finished ", time_from(start))
+    spoof_gmm = train_gmm(X=spoof_X, bonafide=False, gmm=spoof_gmm)
+    print('Spoof GMM succesfully trained')
 
 
 def train_gmm(X, bonafide, gmm=None):
