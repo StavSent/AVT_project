@@ -8,7 +8,7 @@ The dataset used in this project is provided by [ASVspoof](https://datashare.ed.
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install required dependencies
 
 ```bash
-pip install sklearn, numpy, pandas, scipy, librosa
+pip install sklearn, numpy, pandas, scipy, librosa, seaborn
 ```
 
 ## How to run
