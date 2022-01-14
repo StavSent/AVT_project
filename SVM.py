@@ -35,7 +35,7 @@ if __name__ == '__main__':
     (train_X, train_Y) = load_results()
 
     # Train SVM
-    model = svm.SVC()
+    model = svm.SVC(probability=True)
     model.fit(train_X, train_Y)
 
     # Save fitted model
