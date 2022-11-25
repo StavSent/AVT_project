@@ -1,6 +1,8 @@
 # AVT_project
 In this project we aim to distinguish spoofed from original audio clips.
 
+WOW
+
 ## Dataset
 The dataset used in this project is provided by [ASVspoof](https://datashare.ed.ac.uk/handle/10283/3336)
 
