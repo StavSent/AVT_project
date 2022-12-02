@@ -30,7 +30,7 @@ Create SVM model
 python SVM.py
 ```
 
-Finally test the whole pipeline by running
+Finally test the whole pipeline by running:
 
 ```bash
 python test.py
