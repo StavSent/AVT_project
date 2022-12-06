@@ -56,7 +56,6 @@ def main(do_scaling=False):
     spoof_gmm = train_gmm(X=spoof_X, bonafide=False, gmm=spoof_gmm)
     print('Spoof GMM succesfully trained')
 
-
 def train_gmm(X, bonafide, gmm=None):
     start = time.time()
     init = gmm is None
