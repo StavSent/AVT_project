@@ -30,7 +30,6 @@ feature_names = ['mfcc_1', 'mfcc_2', 'mfcc_3', 'mfcc_4', 'mfcc_5', 'mfcc_6', 'mf
                  'delta_mfcc2_10', 'delta_mfcc2_11', 'delta_mfcc2_12', 'delta_mfcc2_13', 'spectral_centroid',
                  'spectral_rolloff', 'spectral_flatness', 'zero_crossing_rate']
 
-
 def main(do_scaling=False):
     start = time.time()
 
